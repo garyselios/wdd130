@@ -1,11 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
     --primary-color: darkblue;   /* nav & h1 */
     --text-color: white;         /* links */
-    --aside-bg: #eee;            /* aside */
     --aside-border: rgba(0,0,0,0.2);
-    --aside-text: #333;
     --shadow-color: gray;        /* box-shadow img */
-    --img-border: 1px solid black;
     --nav-padding: 10px;
     --link-padding: 20px;
 }
@@ -44,16 +47,19 @@ main {
 main img {
     width: 150px;
     height: auto;
+    float: right;
 }
 
-aside {
+aside { 
+    position: relative;
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid var(--aside-border);
-    padding: 1rem;
-    background-color: var(--aside-bg);
-    color: ar(--aside-text);
     text-align: center;
+}
+
+aside h2 {
+  position: absolute;
+  top: 15px;
+  left: 120px;
 }
 
 aside img {
@@ -67,4 +73,12 @@ footer {
     text-align: center;
 }
 
+/* class selectors */
 
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
