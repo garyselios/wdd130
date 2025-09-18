@@ -73,13 +73,17 @@ h2 {
 }
 
 .hero article img {
-  float: right;
-  width: 125px;
+    float: right;
+    width: 125px;
 }
 
 .article {
     color: #fff;
-    top: 10px;
-    width: 98%;
+    top: 20px;
+    width: auto;
     background-color: var(--accent1-color);
+}
+
+footer {
+    text-align: center;
 }
