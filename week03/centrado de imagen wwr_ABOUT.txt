@@ -1,0 +1,18 @@
+.hero article img {
+  width: 125px;
+  /* The "order" property moves the image within the flexbox container */
+  order: 1; 
+}
+
+.article {
+  display: flex; /* This activates flexbox mode on the container */
+  align-items: center; /* Vertically centers the items (image and text) */
+  gap: 16px; /* Adds space between the image and the paragraph */
+  color: #fff;
+  background-color: var(--accent1-color);
+  padding: 06px; /* Prevents content from sticking to the edges */
+}
+
+footer {
+    text-align: center;
+}
