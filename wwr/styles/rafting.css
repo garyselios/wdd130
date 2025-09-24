@@ -57,8 +57,8 @@ nav a {
     color: white;
     padding: 1rem 2rem;
     text-align: center;
-    width: 100%; /* ← OCUPAR TODO EL ANCHO */
-    display: block; /* ← NO inline-block */
+    width: 100%; 
+    display: block; /
     margin: 0 auto;
 }
 
