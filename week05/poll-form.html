@@ -11,6 +11,7 @@
 <body>
     <header>
         <main>
+            <h1>WDD 130 | HTML Form - User Poll</h1>
             <form>
                 <fieldset>
                     <legend>Contact Information</legend>
@@ -36,21 +37,28 @@
                             <option value="brave">Brave</option>
                             <option value="other">Other</option>
                         </select>
-
                     </div>
+
                     <div class="form-item column1">
                         <label for="pet">Do you have a household pet?</label>
                         <input type="checkbox" id="pet" name="pet">
                     </div>
+
+                    <div class="form-item column1">
+                        <div class="form-item textarea-ful">
+                            <label for="feedback">List the places you have lived:</label>
+                            <textarea id="feedback" name="feedback" rows="4"
+                                placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+                        </div>
                     </div>
-                    <label for="feedback">List the places you have lived:</label>
-                    <textarea id="feedback" name="feedback" rows="4"
-                        placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
                 </fieldset>
                 <button type="submit">Submit Poll</button>
             </form>
         </main>
     </header>
+    <footer>
+        &copy; 2024 | HTML Form - User Poll Activity | Gary Selios
+    </footer>
 </body>
 
 </html>

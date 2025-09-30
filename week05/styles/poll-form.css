@@ -41,15 +41,7 @@ border: 1px solid rgb(0 0 0 / 0.2);
 padding: 1rem;
 }
 
-egend {
-padding: 0.5rem;
-color: navy;
-font-size: 1.3em;
-WDD 130 | CSS Styling on Forms https://byui-cse.github.io/wdd130-ww-course/week05/prepare-css-form.html
-6 of 12 9/29/2025, 6:17 PM
-}
-
-egend {
+legend {
 padding: 0.5rem;
 color: navy;
 font-size: 1.3em;
@@ -101,6 +93,16 @@ display: grid;
 align-items: center;
 }
 
+.form-item:has(textarea) {
+    grid-template-columns: 1fr;
+    align-items: start;
+}
+
+.form-item:has(textarea) label {
+    text-align: center;
+    padding-right: 0;
+}
+
 .column1 {
 grid-template-columns: 3fr 1fr;
 margin: 0.5rem 0;
@@ -109,3 +111,11 @@ margin: 0.5rem 0;
 .column2 {
 grid-template-columns: 1fr 2fr;
 }
+
+select {
+    background-color: white !important;
+    color: #333 !important;
+    border: 1px solid #ccc !important;
+}
+
+
