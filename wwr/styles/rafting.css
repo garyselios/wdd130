@@ -1,8 +1,7 @@
 :root {
   --primary-color: #ffffff;
   --secondary-color: #5fa8d3;
-  --accent1-color: #1982c4;
-  --accent2-color: #ffb703;
+  --accent1-color: black;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -63,7 +62,7 @@ nav a {
 }
 
 .hero-title h1 {
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 1rem 2rem;
   display: inline-block;
@@ -108,7 +107,7 @@ nav a {
 }
 
 .history-section h2 {
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 1rem 2rem;
   text-align: center;
@@ -150,7 +149,7 @@ nav a {
 }
 
 .adventure-section h2 {
-  background-color: var(--accent1-color);
+  background-color: var(--secondary-color);
   color: white;
   padding: 1rem 2rem;
   text-align: center;
