@@ -621,6 +621,18 @@ footer p {
 
 /*  HOME  */
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* HERO SECTION */
 .hero-home {
     position: relative;
@@ -656,9 +668,11 @@ footer p {
 /* NEWSLETTER SECTION */
 .newsletter-section {
     background: linear-gradient(rgb(0, 0, 0), var(--secondary-color));
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     text-align: center;
+    color: white !important; /* Forzar color blanco */
 }
+
 
 .newsletter-container {
     max-width: 600px;
@@ -670,11 +684,18 @@ footer p {
     margin-bottom: 2rem;
 }
 
+.newsletter-container h3 {
+    color: white !important; /* Forzar h3 blanco */
+    margin-bottom: 2rem;
+    font-size: 1.8rem; /* Opcional: hacerlo más grande */
+}
+
 .newsletter-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .newsletter-form .form-group {
@@ -683,8 +704,8 @@ footer p {
 }
 
 .newsletter-form label {
+    color: white !important; /* Forzar labels blancas */
     display: block;
-    color: white !important;
     margin-bottom: 0.5rem;
     text-align: left;
 }
