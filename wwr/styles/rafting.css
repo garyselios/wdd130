@@ -464,3 +464,337 @@ footer p {
     color: var(--accent1-color);
     font-style: italic;
 }
+
+
+/*  ---------  TRIPS --------  */
+
+/* TRIPS PAGE STYLES */
+.cta-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.cta-section h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+.trips-section {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+
+/*  trips  */
+
+.trips-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.trip-descriptions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: scale(1.05);
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 1.5rem;
+}
+
+.trip-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.trip-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.trip-info li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.trips-table-section {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+}
+
+.trips-table-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.trips-table th {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+}
+
+.trips-table tr:hover {
+    background-color: #c9d8e8;
+}
+
+.trip-card:nth-child(3) {
+    grid-column: 1 / span 2;
+    width: calc(50% - 1rem); 
+    margin: 0 auto;
+     background-color: rgba(243, 136, 136, 0.3); /* Naranja pastel */
+}
+
+.trip-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.trip-card:nth-child(1) {
+    background-color: rgba(200, 230, 201, 0.3); 
+}
+
+.trip-card:nth-child(2) {
+    background-color: rgba(251, 246, 152, 0.3); 
+}
+
+
+
+/*  HOME  */
+
+/* HERO SECTION */
+.hero-home {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+/* NEWSLETTER SECTION */
+.newsletter-section {
+    background: linear-gradient(rgb(0, 0, 0), var(--secondary-color));
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-section h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.newsletter-form .form-group {
+    width: 100%;
+    max-width: 400px;
+}
+
+.newsletter-form label {
+    display: block;
+    color: white !important;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.newsletter-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-btn {
+    background-color: white;
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-btn:hover {
+    background-color: #d9f3c5;
+}
+
+/* CALL TO ACTION */
+.cta-home {
+    background: linear-gradient(var(--secondary-color), rgb(0, 0, 0)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.cta-content p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* GRID LAYOUT */
+.purpose-grid {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.purpose-grid h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.grid-item {
+    background: rgba(60, 210, 143, 0.1); /* Celeste muy translúcido */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-content {
+    padding: 1.5rem;
+}
+
+.grid-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.grid-content p {
+    color: var(--accent1-color);
+    line-height: 1.6;
+}
